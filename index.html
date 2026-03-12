@@ -1,407 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Curated Frames | Scarlett Sandy</title>
-  <style>
-    :root {
-      --deep-red: #3d090c;
-      --wine: #280506;
-      --soft-rose: #d3aaaa;
-      --cream: #f8f2ec;
-      --text-dark: #3c1616;
-      --white: #ffffff;
-      --tan: #e5d9c8;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curated Frames | Scarlett Sandy</title>
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+:root{
+--deep-red:#3d090c;
+--wine:#280506;
+--soft-rose:#d3aaaa;
+--cream:#f8f2ec;
+--text-dark:#3c1616;
+--white:#ffffff;
+--tan:#e5d9c8;
+}
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(rgba(61, 9, 12, 0.78), rgba(61, 9, 12, 0.78)), url("roses.jpg") center/cover fixed;
-      color: var(--text-dark);
-      line-height: 1.6;
-    }
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
 
-    h1, h2, h3, .display-font {
-      font-family: Georgia, "Times New Roman", serif;
-      letter-spacing: 1px;
-    }
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:linear-gradient(rgba(61,9,12,0.78),rgba(61,9,12,0.78)),url("roses.jpg") center/cover fixed;
+color:var(--text-dark);
+line-height:1.6;
+}
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+h1,h2,h3,.display-font{
+font-family:Georgia,"Times New Roman",serif;
+letter-spacing:1px;
+}
 
-    img {
-      width: 100%;
-      display: block;
-    }
+a{
+color:inherit;
+text-decoration:none;
+}
 
-    .page {
-      width: min(1200px, 94vw);
-      margin: 0 auto;
-      padding: 18px 0 28px;
-    }
+img{
+width:100%;
+display:block;
+}
 
-    .panel {
-      background: var(--cream);
-      border: 10px solid rgba(211, 170, 170, 0.9);
-      margin-bottom: 18px;
-      overflow: hidden;
-    }
+.page{
+width:min(1200px,94vw);
+margin:0 auto;
+padding:18px 0 28px;
+}
 
-    .top-link {
-      display: inline-block;
-      margin-bottom: 14px;
-      color: var(--white);
-      font-size: 0.95rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
+.panel{
+background:var(--cream);
+border:10px solid rgba(211,170,170,0.9);
+margin-bottom:18px;
+overflow:hidden;
+}
 
-    .hero {
-      min-height: 72vh;
-      position: relative;
-      background: linear-gradient(rgba(35, 8, 8, 0.42), rgba(35, 8, 8, 0.5)), url("1.png") center top/cover;
-      display: flex;
-      align-items: flex-end;
-      padding: 34px;
-      color: var(--white);
-    }
+.top-link{
+display:inline-block;
+margin-bottom:14px;
+color:var(--white);
+font-size:0.95rem;
+letter-spacing:0.08em;
+text-transform:uppercase;
+}
 
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(20, 0, 0, 0.55), rgba(20, 0, 0, 0.08));
-      z-index: 1;
-    }
+/* HERO */
 
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      max-width: 760px;
-    }
+.hero{
+min-height:72vh;
+position:relative;
+background:linear-gradient(rgba(35,8,8,0.42),rgba(35,8,8,0.5)),url("1.png") center top/cover;
+display:flex;
+align-items:flex-end;
+padding:34px;
+color:var(--white);
+}
 
-    .eyebrow {
-      display: inline-block;
-      background: rgba(61, 9, 12, 0.88);
-      color: var(--white);
-      padding: 8px 14px;
-      margin-bottom: 16px;
-      font-size: 0.86rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-    }
+.hero::after{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(to top,rgba(20,0,0,0.55),rgba(20,0,0,0.08));
+z-index:1;
+}
 
-    .hero h1 {
-      font-size: clamp(3rem, 7vw, 6rem);
-      line-height: 0.9;
-      text-transform: uppercase;
-      margin-bottom: 14px;
-      color: rgba(255, 244, 240, 0.94);
-      text-shadow: 0 2px 18px rgba(0,0,0,0.24);
-    }
+.hero-content{
+position:relative;
+z-index:2;
+max-width:760px;
+}
 
-    .hero p {
-      max-width: 640px;
-      font-size: 1.05rem;
-    }
+.eyebrow{
+display:inline-block;
+background:rgba(61,9,12,0.88);
+color:var(--white);
+padding:8px 14px;
+margin-bottom:16px;
+font-size:0.86rem;
+text-transform:uppercase;
+letter-spacing:0.12em;
+}
 
-    .overview {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 18px;
-    }
+.hero h1{
+font-size:clamp(3rem,7vw,6rem);
+line-height:0.9;
+text-transform:uppercase;
+margin-bottom:14px;
+color:rgba(255,244,240,0.94);
+text-shadow:0 2px 18px rgba(0,0,0,0.24);
+}
 
-    .section {
-      padding: 28px;
-    }
+.hero p{
+max-width:640px;
+font-size:1.05rem;
+}
 
-    .section-title {
-      color: var(--deep-red);
-      font-size: clamp(1.8rem, 3vw, 3.1rem);
-      text-transform: uppercase;
-      line-height: 0.95;
-      margin-bottom: 16px;
-    }
+.overview{
+display:grid;
+grid-template-columns:1.1fr 0.9fr;
+gap:18px;
+}
 
-    .summary p {
-      margin-bottom: 12px;
-      font-size: 0.98rem;
-    }
+.section{
+padding:28px;
+}
 
-    .meta-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 12px;
-    }
+.section-title{
+color:var(--deep-red);
+font-size:clamp(1.8rem,3vw,3.1rem);
+text-transform:uppercase;
+line-height:0.95;
+margin-bottom:16px;
+}
 
-    .meta-card {
-      background: var(--white);
-      border: 2px solid #ecd8d6;
-      padding: 14px;
-    }
+.summary p{
+margin-bottom:12px;
+font-size:0.98rem;
+}
 
-    .meta-card h3 {
-      color: var(--deep-red);
-      font-size: 0.95rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 6px;
-    }
+.meta-grid{
+display:grid;
+grid-template-columns:1fr;
+gap:12px;
+}
 
-    .meta-card p {
-      font-size: 0.97rem;
-    }
+.meta-card{
+background:var(--white);
+border:2px solid #ecd8d6;
+padding:14px;
+}
 
-    .image-feature {
-      background: var(--tan);
-      padding: 0;
-    }
+.meta-card h3{
+color:var(--deep-red);
+font-size:0.95rem;
+text-transform:uppercase;
+letter-spacing:0.08em;
+margin-bottom:6px;
+}
 
-    .image-feature img {
-      max-height: 600px;
-      object-fit: cover;
-      object-position: center top;
-    }
+.meta-card p{
+font-size:0.97rem;
+}
 
-    .caption {
-      padding: 14px 20px 18px;
-      font-size: 0.92rem;
-      color: var(--wine);
-      background: var(--cream);
-      border-top: 1px solid #e3d0cf;
-    }
+.image-feature{
+background:var(--tan);
+padding:0;
+}
 
-    .process-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-    }
+.image-feature img{
+max-height:600px;
+object-fit:cover;
+object-position:center top;
+}
 
-    .process-card {
-      background: var(--white);
-      border: 2px solid #ecd8d6;
-      padding: 20px;
-    }
+.caption{
+padding:14px 20px 18px;
+font-size:0.92rem;
+color:var(--wine);
+background:var(--cream);
+border-top:1px solid #e3d0cf;
+}
 
-    .process-number {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 2rem;
-      color: var(--deep-red);
-      margin-bottom: 8px;
-    }
+.process-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:18px;
+}
 
-    .process-card h3 {
-      color: var(--deep-red);
-      text-transform: uppercase;
-      font-size: 1rem;
-      margin-bottom: 8px;
-    }
+.process-card{
+background:var(--white);
+border:2px solid #ecd8d6;
+padding:20px;
+}
 
-    .gallery {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-    }
+.process-number{
+font-family:Georgia,"Times New Roman",serif;
+font-size:2rem;
+color:var(--deep-red);
+margin-bottom:8px;
+}
 
-    .gallery-card {
-      background: var(--white);
-      border: 2px solid #ecd8d6;
-      overflow: hidden;
-    }
+.process-card h3{
+color:var(--deep-red);
+text-transform:uppercase;
+font-size:1rem;
+margin-bottom:8px;
+}
 
-    .gallery-card img {
-      height: 100%;
-      min-height: 340px;
-      object-fit: cover;
-      object-position: center top;
-    }
+.gallery{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:18px;
+}
 
-    .results {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-      margin-top: 16px;
-    }
+.gallery-card{
+background:var(--white);
+border:2px solid #ecd8d6;
+overflow:hidden;
+}
 
-    .result-pill {
-      background: var(--deep-red);
-      color: var(--white);
-      padding: 16px 14px;
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-size: 0.92rem;
-    }
+.gallery-card img{
+height:100%;
+min-height:340px;
+object-fit:cover;
+object-position:center top;
+}
 
-    .nav-row {
-      display: flex;
-      justify-content: space-between;
-      gap: 14px;
-      margin-top: 8px;
-    }
+.results{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:14px;
+margin-top:16px;
+}
 
-    .nav-button {
-      background: var(--deep-red);
-      color: var(--white);
-      padding: 12px 18px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-size: 0.9rem;
-    }
+.result-pill{
+background:var(--deep-red);
+color:var(--white);
+padding:16px 14px;
+text-align:center;
+text-transform:uppercase;
+letter-spacing:0.08em;
+font-size:0.92rem;
+}
 
-    @media (max-width: 900px) {
-      .overview,
-      .process-grid,
-      .gallery,
-      .results {
-        grid-template-columns: 1fr;
-      }
+.nav-row{
+display:flex;
+justify-content:space-between;
+gap:14px;
+margin-top:8px;
+}
 
-      .hero {
-        min-height: 58vh;
-        background-position: center 20%;
-      }
+.nav-button{
+background:var(--deep-red);
+color:var(--white);
+padding:12px 18px;
+text-transform:uppercase;
+letter-spacing:0.08em;
+font-size:0.9rem;
+}
 
-      .hero h1 {
-        font-size: clamp(2.4rem, 10vw, 4rem);
-      }
+@media (max-width:900px){
 
-      .nav-row {
-        flex-direction: column;
-      }
-    }
-  </style>
+.overview,
+.process-grid,
+.gallery,
+.results{
+grid-template-columns:1fr;
+}
+
+.hero{
+min-height:58vh;
+background-position:center 20%;
+}
+
+.hero h1{
+font-size:clamp(2.4rem,10vw,4rem);
+}
+
+.nav-row{
+flex-direction:column;
+}
+
+}
+</style>
 </head>
+
 <body>
-  <main class="page">
-    <a class="top-link" href="index.html">← Back to Home</a>
 
-    <section class="panel hero">
-      <div class="hero-content">
-        <span class="eyebrow">Project One</span>
-        <h1 class="display-font">Curated<br>Frames</h1>
-        <p>
-          A film-centered website concept designed as a personal space to collect, organize, and explore movies through a visually curated experience.
-        </p>
-      </div>
-    </section>
+<main class="page">
 
-    <section class="overview">
-      <div class="panel section summary">
-        <h2 class="section-title display-font">About the Project</h2>
-        <p>
-          Curated Frames is a website I designed around my love of film and visual storytelling. The idea was to create a cinematic digital space where users could search, sort, and reflect on the movies that shape them.
-        </p>
-        <p>
-          I wanted the site to feel elevated and editorial while still being easy to navigate. The design uses a soft neutral palette, strong typography, poster imagery, and structured layouts to make the experience feel organized and intentional.
-        </p>
-        <p>
-          This project reflects the kind of work I enjoy most: combining branding, UX thinking, and visual design into an interface that feels both personal and polished.
-        </p>
-      </div>
+<a class="top-link" href="https://scrlettsandy.github.io/portflio/" target="_blank">← Back to Home</a>
 
-      <div class="panel section">
-        <h2 class="section-title display-font">Project Details</h2>
-        <div class="meta-grid">
-          <div class="meta-card">
-            <h3>Type</h3>
-            <p>Website design / film discovery platform concept</p>
-          </div>
-          <div class="meta-card">
-            <h3>My Role</h3>
-            <p>Research, branding, interface design, layout, and visual direction</p>
-          </div>
-          <div class="meta-card">
-            <h3>Focus</h3>
-            <p>User experience, content organization, and creating a strong visual identity</p>
-          </div>
-          <div class="meta-card">
-            <h3>Goal</h3>
-            <p>Build a film website that feels curated, immersive, and easy to explore</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<section class="panel hero">
+<div class="hero-content">
+<span class="eyebrow">Project One</span>
+<h1 class="display-font">Curated<br>Frames</h1>
+<p>
+A film-centered website concept designed as a personal space to collect, organize, and explore movies through a visually curated experience.
+</p>
+</div>
+</section>
 
-    <section class="panel image-feature">
-      <img src="1.png" alt="Curated Frames homepage design">
-      <div class="caption">Homepage concept featuring curated poster visuals, a cinematic title treatment, and an inviting branded introduction.</div>
-    </section>
+<section class="overview">
 
-    <section class="panel section">
-      <h2 class="section-title display-font">Design Process</h2>
-      <div class="process-grid">
-        <div class="process-card">
-          <div class="process-number">01</div>
-          <h3>Concept</h3>
-          <p>
-            I started with the idea of turning a film archive into something more personal and visually expressive. Instead of a plain database-style layout, I wanted the site to feel like a curated collection.
-          </p>
-        </div>
-        <div class="process-card">
-          <div class="process-number">02</div>
-          <h3>Visual Direction</h3>
-          <p>
-            I used elegant serif typography, warm neutral colours, and film posters to create a refined look that matched the emotional and artistic side of cinema.
-          </p>
-        </div>
-        <div class="process-card">
-          <div class="process-number">03</div>
-          <h3>UX Structure</h3>
-          <p>
-            The interface was organized to make browsing simple. Search, genre exploration, profile data, and ratings were separated clearly so users could move through the site naturally.
-          </p>
-        </div>
-        <div class="process-card">
-          <div class="process-number">04</div>
-          <h3>Outcome</h3>
-          <p>
-            The final result is a visually strong website concept that shows my ability to build a cohesive digital experience around a clear theme and audience.
-          </p>
-        </div>
-      </div>
-    </section>
+<div class="panel section summary">
+<h2 class="section-title display-font">About the Project</h2>
+<p>
+Curated Frames is a website I designed around my love of film and visual storytelling. The idea was to create a cinematic digital space where users could search, sort, and reflect on the movies that shape them.
+</p>
+<p>
+I wanted the site to feel elevated and editorial while still being easy to navigate. The design uses a soft neutral palette, strong typography, poster imagery, and structured layouts to make the experience feel organized and intentional.
+</p>
+<p>
+This project reflects the kind of work I enjoy most: combining branding, UX thinking, and visual design into an interface that feels both personal and polished.
+</p>
+</div>
 
-    <section class="gallery">
-      <div class="panel gallery-card">
-        <img src="2.png" alt="Curated Frames archive page">
-      </div>
-      <div class="panel gallery-card">
-        <img src="3.png" alt="Curated Frames genres and profile page">
-      </div>
-    </section>
+<div class="panel section">
+<h2 class="section-title display-font">Project Details</h2>
 
-    <section class="panel section">
-      <h2 class="section-title display-font">What This Project Shows</h2>
-      <div class="results">
-        <div class="result-pill">Brand Identity</div>
-        <div class="result-pill">UX Thinking</div>
-        <div class="result-pill">Editorial Layout</div>
-        <div class="result-pill">Visual Storytelling</div>
-        <div class="result-pill">Interface Design</div>
-        <div class="result-pill">Creative Direction</div>
-      </div>
-    </section>
+<div class="meta-grid">
 
-    <section class="panel section">
-      <h2 class="section-title display-font">Reflection</h2>
-      <p>
-        Curated Frames was a chance for me to bring together my interest in film and my interest in digital design. It helped me explore how an interface can feel emotional, organized, and branded all at once. More than anything, this project reflects the type of work I want to keep making: thoughtful digital experiences built around strong concepts and strong visuals.
-      </p>
-      <div class="nav-row">
-        <a class="nav-button" href="index.html">Back to Home</a>
-        <a class="nav-button" href="project2.html">Next Project</a>
-      </div>
-    </section>
-  </main>
+<div class="meta-card">
+<h3>Type</h3>
+<p>Website design / film discovery platform concept</p>
+</div>
+
+<div class="meta-card">
+<h3>My Role</h3>
+<p>Research, branding, interface design, layout, and visual direction</p>
+</div>
+
+<div class="meta-card">
+<h3>Focus</h3>
+<p>User experience, content organization, and creating a strong visual identity</p>
+</div>
+
+<div class="meta-card">
+<h3>Goal</h3>
+<p>Build a film website that feels curated, immersive, and easy to explore</p>
+</div>
+
+</div>
+</div>
+
+</section>
+
+<section class="panel image-feature">
+<img src="1.png" alt="Curated Frames homepage design">
+<div class="caption">
+Homepage concept featuring curated poster visuals, a cinematic title treatment, and an inviting branded introduction.
+</div>
+</section>
+
+<section class="gallery">
+
+<div class="panel gallery-card">
+<img src="2.png">
+</div>
+
+<div class="panel gallery-card">
+<img src="3.png">
+</div>
+
+</section>
+
+<section class="panel section">
+
+<h2 class="section-title display-font">What This Project Shows</h2>
+
+<div class="results">
+<div class="result-pill">Brand Identity</div>
+<div class="result-pill">UX Thinking</div>
+<div class="result-pill">Editorial Layout</div>
+<div class="result-pill">Visual Storytelling</div>
+<div class="result-pill">Interface Design</div>
+<div class="result-pill">Creative Direction</div>
+</div>
+
+</section>
+
+<section class="panel section">
+
+<h2 class="section-title display-font">Reflection</h2>
+
+<p>
+Curated Frames was a chance for me to bring together my interest in film and my interest in digital design. It helped me explore how an interface can feel emotional, organized, and branded all at once. More than anything, this project reflects the type of work I want to keep making: thoughtful digital experiences built around strong concepts and strong visuals.
+</p>
+
+<div class="nav-row">
+<a class="nav-button" href="https://scrlettsandy.github.io/portflio/" target="_blank">Back to Home</a>
+<a class="nav-button" href="https://scrlettsandy.github.io/prodject2/" target="_blank">Next Project</a>
+</div>
+
+</section>
+
+</main>
+
 </body>
 </html>
