@@ -142,6 +142,37 @@
       margin-bottom:18px;
     }
 
+    .button-row{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-top:22px;
+    }
+
+    .button{
+      display:inline-block;
+      padding:13px 20px;
+      border-radius:999px;
+      background:linear-gradient(180deg, var(--wine-soft), var(--cherry));
+      color:var(--text);
+      font-size:0.82rem;
+      letter-spacing:0.13em;
+      text-transform:uppercase;
+      font-weight:700;
+      border:1px solid rgba(255,255,255,0.18);
+      box-shadow:var(--shadow);
+      transition:0.25s ease;
+    }
+
+    .button:hover{
+      transform:translateY(-2px);
+      box-shadow:0 26px 70px rgba(0,0,0,0.45);
+    }
+
+    .button.secondary{
+      background:rgba(255,255,255,0.07);
+    }
+
     .hero-visual{
       position:relative;
       min-height:520px;
@@ -239,6 +270,20 @@
       color:var(--muted);
       line-height:1.75;
       font-size:0.98rem;
+    }
+
+    .inline-link{
+      display:inline-block;
+      margin-top:16px;
+      color:var(--rose);
+      border-bottom:1px solid rgba(232,215,209,0.5);
+      padding-bottom:3px;
+      font-weight:700;
+      transition:0.25s ease;
+    }
+
+    .inline-link:hover{
+      opacity:0.75;
     }
 
     .process-grid{
@@ -475,6 +520,11 @@
           Curated Frames is a film-centered website concept made to feel cinematic, polished, and personal.
           It brings together movie browsing, visual storytelling, and editorial-inspired design.
         </p>
+
+        <div class="button-row">
+          <a href="https://scrlettsandy.github.io/index.html/" class="button" target="_blank">Visit Website</a>
+          <a href="#gallery" class="button secondary">View Gallery</a>
+        </div>
       </div>
 
       <div class="hero-visual">
@@ -496,6 +546,10 @@
           I focused on strong visuals, clear hierarchy, and a mood that reflects the feeling of watching
           and collecting films.
         </p>
+
+        <a href="https://scrlettsandy.github.io/index.html/" class="inline-link" target="_blank">
+          Open the live Curated Frames website
+        </a>
       </div>
     </section>
 
